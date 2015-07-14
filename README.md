@@ -9,6 +9,10 @@
 
 ## D - To move right. ##
 
+## C - To change car color. ##
+
+## Space - To pause. ##   
+
 
 Stage 2:
 
@@ -21,3 +25,4 @@ Adding a menu.
 More customisation. (ignore moved to stage 3.)
 Adding 3 new NPCS to the generation system.
 3 heart system.
+
