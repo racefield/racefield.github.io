@@ -1,0 +1,177 @@
+/*base.css*/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/**********/
+/* ROADS */
+/**********/
+
+.roads {
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.road {
+	background: #5d5d5d;
+	height: 100%;
+	border-right: dashed white 10px;
+	-webkit-flex: 1;
+}
+
+/**********/
+/* CAR */
+/**********/
+
+#mainCar {
+	transition: left 0.2s ease;
+}
+
+.car {
+	display: inline-block;
+	width: 46px;
+	height: 100px;
+	background-image: url('images/cars.png');
+}
+
+.car[data-car-color=red] {
+	background-color: red;
+	background-position: -67px 0px;
+}
+.car[data-car-color=blue] {
+	background-color: blue;
+	background-position: -20px 0px;
+}
+.car[data-car-color=yellow] {
+	background-color: yellow;
+	background-position: -162px 0px;
+}
+
+/**********/
+/* JUNK */
+/**********/
+
+.lane_wrap {
+	position: absolute;
+	text-align: center;
+	left: 0;
+}
+
+.junk {
+	transition: all 0.3s ease;
+}
+
+.junk > div {
+	display: inline-block;
+	height: 100px;
+	width: 80px;
+	background-repeat: no-repeat;
+}
+
+.pikachu {
+	background-position: -150px 0px;
+	background-image: url('images/tptyntrtg.png');
+	background-size: 360px;
+}
+
+.multiPoints {
+	background-image: url('images/multi.gif');
+	background-size: 100% 80%;
+}
+
+.extraPoints {
+	background-image: url('images/PM_Cherry.png');
+	background-size: 100% 90%;
+}
+
+.extraLife {
+	background-image: url('images/heart.png');
+	background-size: 100% 90%;
+}
+
+.blownUp {
+	-webkit-transform: rotate(180deg) scale(0);
+}
+.earned {
+	-webkit-transform: scale(1.7);
+}
+
+/**********/
+/* SCORE */
+/**********/
+
+.scorebox {
+	position: absolute;
+	z-index:2;
+	right: 20px;
+	top: 0;
+	width: 200px;
+	height: 100px;
+	background-color: transparent;
+}
+#score {
+	color: white;
+	font-size: 4em;
+	text-align: right;
+}
+
+.rules {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/********/
+/* MENU */
+/********/
+
+#menuBtn {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	border-radius: 50%;
+	background-image:url('images/cog.png');
+}
+
+#menuScreen {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+}
+
+#blackout {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+}
+
+#backTo {
+	text-align: center;
+	padding-top: 125px;
+	font-family: 'CodeLight', sans-serif;
+	font-size: 45px;
+
+}
+
+#backTo > a {
+	text-decoration: none;
+	color: orange;
+}
+
+#backTo > a:hover {
+	text-decoration: underline;
+}
+
